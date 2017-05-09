@@ -5,21 +5,10 @@ body {
 .top-buffer {
   margin-top: 1em;
 } 
-
-.profile-heading {
-  margin: 20px 0;
-  padding-bottom: 30px;
-}
-
-.tagline {
-  padding:20px 0;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
 .avatar img {
   border-radius: 200px;
 }
+
 p.title.is-bold {
   font-weight: bold;
 }
