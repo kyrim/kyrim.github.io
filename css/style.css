@@ -3,7 +3,7 @@ body {
 }
 
 .construction {
-  color: #f9c500;
+  color: #c75f00;
 }
 
 .top-buffer {
@@ -11,6 +11,11 @@ body {
 } 
 .avatar img {
   border-radius: 200px;
+}
+
+.image .is-256x256 {
+      height: 256px;
+    width: 256px;
 }
 
 p.title.is-bold {
@@ -23,9 +28,6 @@ p.title.is-bold {
   margin-bottom: auto;
 }
 
-.second-section {
-      background-color: #f5f0ff;
-}
 
 .icon-padding {
   margin-left: 0.3em;
@@ -33,6 +35,14 @@ p.title.is-bold {
 
 .is-light-blue {
   background-color: #f3f8ff;
+}
+
+.is-light-purple {
+    background-color: #f5f0ff;
+}
+
+.is-light-green {
+  background-color: #f3fff6;
 }
 
 .timeline {
