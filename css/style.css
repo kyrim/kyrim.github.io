@@ -3,6 +3,20 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+/* Hack to get clicking on hash href to div working correctly */
+section span {
+  margin-top: -3.25rem; /* Size of fixed header */
+  padding-bottom: 3.25rem;
+  display: block;
+}
+
+/* Hack to get clicking on hash href to div working correctly */
+h1 span {
+  margin-top: -3.25rem; /* Size of fixed header */
+  padding-bottom: 3.25rem;
+  display: block;
+}
+
 .top-border {
   border-top: 1px solid lightgray;
 }

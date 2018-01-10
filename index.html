@@ -27,7 +27,8 @@
 
 		<div id="nav-menu" class="navbar-menu">
 			<div class="navbar-start">
-				<a href="#about-me" class="navbar-item">About Me</a>
+				<a href="#me" class="navbar-item is-primary">Me</a>
+				<a href="#background" class="navbar-item">Background</a>
 				<a href="#experience" class="navbar-item">Experience</a>
 				<a href="#career-education" class="navbar-item">Career / Education</a>
 				<a href="#current-projects" class="navbar-item">Current Projects</a>
@@ -59,7 +60,7 @@
 	</nav>
 
 	<section class="hero is-pattern">
-
+		<span id="me">&nbsp;</span>
 		<div class="hero-body bottom-inset">
 			<div class="container">
 
@@ -99,7 +100,8 @@
 
 			<div class="column is-half wow fadeIn">
 				<div class="content">
-					<h1 id="about-me" class="title">About me</h1>
+					<h1 class="title">
+						<span id="background">&nbsp;</span>Background</h1>
 
 					<p>
 						One of my first memories I have as child is tinkering with a computer with Windows 95, finding applications and fun games
@@ -112,7 +114,8 @@
 						in my hobbies such as music, I've always found a way to delve deeper into the digital world.
 					</p>
 
-					<h1 id="experience" class="title">Experience</h1>
+					<h1 class="title">
+						<span id="experience">&nbsp;</span>Experience</h1>
 					<p>
 						With over 5 years of experience in the industry in a range of programming languages and technologies from back-end to front-end,
 						I have constantly been challenging myself.
@@ -259,7 +262,8 @@
 		<div class="columns wow fadeInUp">
 
 			<div class="column">
-				<h1 id="career-education" class="title">Career / Education</h1>
+				<h1 class="title">
+					<span id="career-education">&nbsp;</span>Career / Education</h1>
 				<div class="box timeline-section">
 					<div class="content">
 						<div class="timeline">
@@ -309,7 +313,8 @@
 			</div>
 
 			<div class="column">
-				<h1 id="current-projects" class="title">Current Projects</h1>
+				<h1 class="title">
+					<span id="current-projects">&nbsp;</span>Current Projects</h1>
 				<div class="card is-fullwidth">
 					<header class="card-header">
 						<p class="card-header-title">
@@ -372,9 +377,6 @@
 		ga('create', 'UA-98830302-1', 'auto');
 		ga('send', 'pageview');
 
-		window.onbeforeunload = function () {
-			window.scrollTo(0, 0);
-		}
 		// For nav bar of mobile devices. Opens "burger" on click.
 		document.addEventListener('DOMContentLoaded', function () {
 
@@ -392,12 +394,6 @@
 					});
 				});
 			}
-		});
-
-		// When scrolling to a new position using hrefs to Ids, the position isn't quite right
-		// adding this to ensure we are a little bit better positioned on scroll
-		window.addEventListener("hashchange", function () {
-			window.scrollTo(window.scrollX, window.scrollY - 80);
 		});
 	</script>
 
