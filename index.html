@@ -15,7 +15,7 @@
 </head>
 
 <body class="is-light-blue">
-	<nav class="navbar is-fixed-top has-shadow wow fadeInDown is-black" id="top">
+	<nav class="navbar is-fixed-top has-shadow is-black" id="top">
 
 		<div class="navbar-brand">
 			<button class="button navbar-burger is-black" data-target="nav-menu">
@@ -76,7 +76,7 @@
 							<img src="https://avatars.githubusercontent.com/kyrim?size=256">
 						</figure>
 					</div>
-					<div class="media-content hello-content wow fadeIn">
+					<div class="media-content hello-content wow fadeInRight">
 						<div class="content">
 							<p>
 								<span class="title is-bold">Hello!</span>
@@ -95,7 +95,7 @@
 
 	<div class="section is-light-purple">
 
-		<div class="columns wow fadeIn">
+		<div class="columns wow fadeInUp">
 
 			<div class="column is-half wow fadeIn">
 				<div class="content">
@@ -256,7 +256,7 @@
 	</div>
 
 	<div class="section is-light-blue top-border">
-		<div class="columns wow fadeIn">
+		<div class="columns wow fadeInUp">
 
 			<div class="column">
 				<h1 id="career-education" class="title">Career / Education</h1>
@@ -344,7 +344,7 @@
 
 		</div>
 	</div>
-	<footer class="footer top-border">
+	<footer class="footer top-border wow fadeInUp">
 		<div class="container">
 			<div class="content has-text-centered">
 				<p>
@@ -373,7 +373,7 @@
 		ga('send', 'pageview');
 
 		window.onbeforeunload = function () {
-			window.scrollTo(80, 80);
+			window.scrollTo(0, 0);
 		}
 		// For nav bar of mobile devices. Opens "burger" on click.
 		document.addEventListener('DOMContentLoaded', function () {
