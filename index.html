@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top is-light-blue">
 
 <head>
 	<meta charset="utf-8">
@@ -8,31 +8,54 @@
 	<title>Kyrim Steele - Software Engineer</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body class="is-light-blue">
-	<nav class="nav has-shadow wow fadeInDown" id="top">
-		<div class="container">
+	<nav class="navbar is-fixed-top has-shadow wow fadeInDown is-black" id="top">
 
-			<div class="nav-center">
+		<div class="navbar-brand">
+			<button class="button navbar-burger is-black" data-target="nav-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
 
-				<a class="nav-item" href="https://github.com/kyrim" target="_blank">
-					<span class="icon">
-						<i class="fa fa-github"></i>
-					</span>
-				</a>
+		<div id="nav-menu" class="navbar-menu">
+			<div class="navbar-start">
+				<a href="#about-me" class="navbar-item">About Me</a>
+				<a href="#experience" class="navbar-item">Experience</a>
+				<a href="#career-education" class="navbar-item">Career / Education</a>
+				<a href="#current-projects" class="navbar-item">Current Projects</a>
+			</div>
 
-				<a class="nav-item" href="https://linkedin.com/in/kyrim-steele-963bb58b" target="_blank">
-					<span class="icon">
-						<i class="fa fa-linkedin"></i>
-					</span>
-				</a>
+			<div class="navbar-end">
+				<div class="navbar-item">
+					<div class="field is-grouped">
+						<p class="control">
+							<a class="button is-black" target="_blank" href="https://github.com/kyrim">
+								<span class="icon">
+									<i class="fa fa-github"></i>
+								</span>
+							</a>
+						</p>
+						<p class="control">
+							<a class="button is-black" target="_blank" href="https://linkedin.com/in/kyrim-steele-963bb58b">
+								<span class="icon">
+									<i class="fa fa-linkedin"></i>
+
+								</span>
+							</a>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
+
 	</nav>
 
 	<section class="hero is-pattern">
@@ -76,7 +99,7 @@
 
 			<div class="column is-half wow fadeIn">
 				<div class="content">
-					<h1 class="title">About me</h1>
+					<h1 id="about-me" class="title">About me</h1>
 
 					<p>
 						One of my first memories I have as child is tinkering with a computer with Windows 95, finding applications and fun games
@@ -89,7 +112,7 @@
 						in my hobbies such as music, I've always found a way to delve deeper into the digital world.
 					</p>
 
-					<h1 class="title">Experience</h1>
+					<h1 id="experience" class="title">Experience</h1>
 					<p>
 						With over 5 years of experience in the industry in a range of programming languages and technologies from back-end to front-end,
 						I have constantly been challenging myself.
@@ -232,11 +255,11 @@
 		</div>
 	</div>
 
-	<div class="section is-light-blue top-inset">
+	<div class="section is-light-blue top-border">
 		<div class="columns wow fadeIn">
 
 			<div class="column">
-				<h1 class="title">Career / Education</h1>
+				<h1 id="career-education" class="title">Career / Education</h1>
 				<div class="box timeline-section">
 					<div class="content">
 						<div class="timeline">
@@ -286,7 +309,7 @@
 			</div>
 
 			<div class="column">
-				<h1 class="title">Current Projects</h1>
+				<h1 id="current-projects" class="title">Current Projects</h1>
 				<div class="card is-fullwidth">
 					<header class="card-header">
 						<p class="card-header-title">
@@ -319,9 +342,24 @@
 				</div>
 			</div>
 
-
 		</div>
 	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>
+					<strong>Website built by</strong> by Kyrim Steele</p>
+				<p>
+					<strong>Using:</strong>
+					<a href="https://bulma.io" target="_blank">Bulma CSS</a>,
+					<a href="https://daneden.github.io/animate.css/" target="_blank">Animate CSS</a> and
+					<a href="http://mynameismatthieu.com/WOW/" target="_blank">WOW.js</a>.
+				</p>
+				<p>View the
+					<a href="https://github.com/kyrim/kyrim.github.io" target="_blank">source code</a> for more information!</p>
+			</div>
+		</div>
+	</footer>
 
 	<script>
 		(function (i, s, o, g, r, a, m) {
@@ -333,6 +371,30 @@
 
 		ga('create', 'UA-98830302-1', 'auto');
 		ga('send', 'pageview');
+
+		// For nav bar of mobile devices. Opens "burger" on click.
+		document.addEventListener('DOMContentLoaded', function () {
+			var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+			if ($navbarBurgers.length > 0) {
+
+				$navbarBurgers.forEach(function ($el) {
+					$el.addEventListener('click', function () {
+
+						var target = $el.dataset.target;
+						var $target = document.getElementById(target);
+
+						$el.classList.toggle('is-active');
+						$target.classList.toggle('is-active');
+					});
+				});
+			}
+		});
+
+		// When scrolling to a new position using hrefs to Ids, the position isn't quite right
+		// adding this to ensure we are a little bit better positioned on scroll
+		window.addEventListener("hashchange", function () {
+			window.scrollTo(window.scrollX, window.scrollY - 80);
+		});
 	</script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>

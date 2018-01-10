@@ -3,8 +3,8 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.top-inset {
-  box-shadow: inset 0px 2px 4px rgba(10, 10, 10, 0.1);
+.top-border {
+  border-top: 1px solid lightgray;
 }
 
 .bottom-inset {
@@ -33,6 +33,7 @@ p.title.is-bold {
 }
 
 .hello-content {
+  max-width: 800px;
   margin-left: 1em;
   margin-top: auto;
   margin-bottom: auto;
@@ -74,7 +75,7 @@ p.title.is-bold {
 }
 
 .is-light-purple {
-  background-color: #f5f0ff;
+  background-color: #f9f6ff;
 }
 
 .timeline {
