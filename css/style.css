@@ -1,5 +1,14 @@
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.top-inset {
+  box-shadow: inset 0px 2px 4px rgba(10, 10, 10, 0.1);
+}
+
+.bottom-inset {
+  box-shadow: inset 0px -2px 4px rgba(10, 10, 10, 0.1);
 }
 
 .construction {
@@ -8,14 +17,15 @@ body {
 
 .top-buffer {
   margin-top: 1em;
-} 
+}
 .avatar img {
   border-radius: 200px;
+  box-shadow: 1px 3px 3px rgba(10, 10, 10, 0.2);
 }
 
 .image .is-256x256 {
-      height: 256px;
-    width: 256px;
+  height: 256px;
+  width: 256px;
 }
 
 p.title.is-bold {
@@ -28,21 +38,43 @@ p.title.is-bold {
   margin-bottom: auto;
 }
 
-
 .icon-padding {
   margin-left: 0.3em;
 }
 
+.is-pattern {
+  background: linear-gradient(
+      135deg,
+      #e6f2ff 22px,
+      #dceafa 22px,
+      #dceafa 24px,
+      transparent 24px,
+      transparent 67px,
+      #dceafa 67px,
+      #dceafa 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        #e6f2ff 22px,
+        #dceafa 22px,
+        #dceafa 24px,
+        transparent 24px,
+        transparent 67px,
+        #dceafa 67px,
+        #dceafa 69px,
+        transparent 69px
+      )0 64px;
+  background-color: #e6f2ff;
+  background-size: 64px 128px;
+}
+
 .is-light-blue {
-  background-color: #f3f8ff;
+  background-color: #e6f2ff;
 }
 
 .is-light-purple {
-    background-color: #f5f0ff;
-}
-
-.is-light-green {
-  background-color: #f3fff6;
+  background-color: #f5f0ff;
 }
 
 .timeline {
@@ -51,34 +83,34 @@ p.title.is-bold {
 }
 
 .timeline .time-item {
-    border-color: #dee5e7;
-    padding-bottom: 1px;
-    position: relative;
-    flex-grow: 0;
-    flex-shrink: 0;
+  border-color: #dee5e7;
+  padding-bottom: 1px;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .timeline .time-item .item-content {
-      margin-bottom: 15px;
-      margin-left: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
 }
 
 .timeline .time-item:after {
-      background-color: #ffffff;
-      border-color: grey;
-      border-radius: 10px;
-      border-style: solid;
-      border-width: 2px;
-      bottom: 0;
-      content: '';
-      height: 14px;
-      left: 0;
-      margin-left: -8px;
-      position: absolute;
-      top: 5px;
-      width: 14px;
+  background-color: #ffffff;
+  border-color: grey;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  bottom: 0;
+  content: "";
+  height: 14px;
+  left: 0;
+  margin-left: -8px;
+  position: absolute;
+  top: 5px;
+  width: 14px;
 }
 .timeline .time-item:before {
-      content: " ";
-      display: table;
+  content: " ";
+  display: table;
 }
