@@ -26,6 +26,7 @@ body {
 }
 .avatar figure {
   border-radius: 200px;
+  background-color: rgba(241, 241, 241, 0.5);
   box-shadow: 1px 3px 3px rgba(10, 10, 10, 0.2);
 }
 
