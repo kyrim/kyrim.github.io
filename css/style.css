@@ -4,17 +4,9 @@ body {
 }
 
 /* Hack to get clicking on hash href to div working correctly */
-section span {
-  margin-top: -3.25rem; /* Size of fixed header */
-  padding-bottom: 3.25rem;
-  display: block;
-}
-
-/* Hack to get clicking on hash href to div working correctly */
-h1 span {
-  margin-top: -3.25rem; /* Size of fixed header */
-  padding-bottom: 3.25rem;
-  display: block;
+.anchor {
+  padding-top: 4.25rem;
+  margin-top: -4.25rem;
 }
 
 .top-border {
