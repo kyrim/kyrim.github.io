@@ -344,7 +344,7 @@
 
 		</div>
 	</div>
-	<footer class="footer">
+	<footer class="footer top-border">
 		<div class="container">
 			<div class="content has-text-centered">
 				<p>
@@ -372,8 +372,12 @@
 		ga('create', 'UA-98830302-1', 'auto');
 		ga('send', 'pageview');
 
+		window.onbeforeunload = function () {
+			window.scrollTo(80, 80);
+		}
 		// For nav bar of mobile devices. Opens "burger" on click.
 		document.addEventListener('DOMContentLoaded', function () {
+
 			var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 			if ($navbarBurgers.length > 0) {
 
