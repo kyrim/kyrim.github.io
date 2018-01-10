@@ -66,13 +66,13 @@
 
 					<div class="media-left wow rollIn is-hidden-tablet">
 						<figure class="image is-128x128">
-							<img alt="Kyrim Steele Avatar" src="https://avatars.githubusercontent.com/kyrim?size=128">
+							<img alt="Kyrim Steele Avatar" data-src="https://avatars.githubusercontent.com/kyrim?size=128">
 						</figure>
 					</div>
 
 					<div class="media-left wow rollIn is-hidden-mobile">
 						<figure class="image is-256x256">
-							<img alt="Kyrim Steele Avatar" src="https://avatars.githubusercontent.com/kyrim?size=256">
+							<img alt="Kyrim Steele Avatar" data-src="https://avatars.githubusercontent.com/kyrim?size=256">
 						</figure>
 					</div>
 					<div class="media-content hello-content wow fadeInRight">
@@ -387,6 +387,13 @@
 					});
 				});
 			}
+		});
+
+		[].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+			img.setAttribute('src', img.getAttribute('data-src'));
+			img.onload = function () {
+				img.removeAttribute('data-src');
+			};
 		});
 	</script>
 

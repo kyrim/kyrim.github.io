@@ -24,14 +24,28 @@ body {
 .top-buffer {
   margin-top: 1em;
 }
-.avatar img {
+.avatar figure {
   border-radius: 200px;
   box-shadow: 1px 3px 3px rgba(10, 10, 10, 0.2);
+}
+
+.avatar img {
+  border-radius: 200px;
 }
 
 .image .is-256x256 {
   height: 256px;
   width: 256px;
+}
+
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  border: black;
+  opacity: 0;
 }
 
 p.title.is-bold {
