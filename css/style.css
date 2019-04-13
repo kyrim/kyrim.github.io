@@ -1,6 +1,63 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: white;
+  background-color: black;
+}
+
+.background-of-site {
+  background-color: black;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.content h1 {
+  color: white;
+}
+
+.card {
+  background-color: black;
+  color: white;
+}
+
+.card ul {
+  list-style: none;
+  color: white;
+}
+.card ul li {
+  margin-bottom: 1.2em;
+}
+
+.card .card-header-title {
+  color: #9200ff;
+  font-size: 1.2em;
+}
+
+.card a {
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.content .tag {
+  color: white;
+  background-color: #0000a0;
+}
+
+.card a:link {
+  background-color: #0000a0;
+}
+
+.card a:visited {
+  background-color: #0000a0;
+}
+.card a:hover {
+  background-color: #000060;
+}
+.card a:active {
+  background-color: #9200ff;
 }
 
 /* Hack to get clicking on hash href to div working correctly */
@@ -10,11 +67,14 @@ body {
 }
 
 .top-border {
-  border-top: 1px solid lightgray;
 }
 
 .bottom-inset {
   box-shadow: inset 0px -2px 4px rgba(10, 10, 10, 0.1);
+}
+
+.job-title {
+  color: #78c5ff;
 }
 
 .construction {
@@ -24,19 +84,26 @@ body {
 .top-buffer {
   margin-top: 1em;
 }
+
+.image.is-256x256 {
+  height: 256px;
+  width: 256px;
+}
+
 .avatar figure {
+  position: relative;
   border-radius: 200px;
-  background-color: rgba(241, 241, 241, 0.5);
-  box-shadow: 1px 3px 3px rgba(10, 10, 10, 0.2);
+  /* box-shadow: 1px 3px 3px rgba(10, 10, 10, 0.2); */
 }
 
 .avatar img {
+  position: absolute;
   border-radius: 200px;
 }
 
-.image .is-256x256 {
-  height: 256px;
-  width: 256px;
+.blurred {
+  filter: blur(20px);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 5);
 }
 
 img {
@@ -48,6 +115,9 @@ img[data-src] {
   border: black;
   opacity: 0;
 }
+.title {
+  color: white;
+}
 
 p.title.is-bold {
   font-weight: bold;
@@ -58,6 +128,7 @@ p.title.is-bold {
   margin-left: 1em;
   margin-top: auto;
   margin-bottom: auto;
+  color: white;
 }
 
 .icon-padding {
@@ -65,38 +136,21 @@ p.title.is-bold {
 }
 
 .is-pattern {
-  background: linear-gradient(
-      135deg,
-      #e6f2ff 22px,
-      #dceafa 22px,
-      #dceafa 24px,
-      transparent 24px,
-      transparent 67px,
-      #dceafa 67px,
-      #dceafa 69px,
-      transparent 69px
-    ),
-    linear-gradient(
-        225deg,
-        #e6f2ff 22px,
-        #dceafa 22px,
-        #dceafa 24px,
-        transparent 24px,
-        transparent 67px,
-        #dceafa 67px,
-        #dceafa 69px,
-        transparent 69px
-      )0 64px;
-  background-color: #e6f2ff;
-  background-size: 64px 128px;
+  background-image: url("../img/nice.jpeg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.is-light-blue {
-  background-color: #e6f2ff;
+.career {
+  background-color: #1d1c5e;
 }
 
-.is-light-purple {
-  background-color: #f9f6ff;
+.background-info {
+  background-color: #050b1a;
 }
 
 .timeline {
@@ -104,8 +158,16 @@ p.title.is-bold {
   position: relative;
 }
 
+.timeline-section {
+  color: white;
+  background-color: black;
+}
+
+.timeline-section .timeline .time-item {
+  border-color: white;
+}
+
 .timeline .time-item {
-  border-color: #dee5e7;
   padding-bottom: 1px;
   position: relative;
   flex-grow: 0;
@@ -115,6 +177,18 @@ p.title.is-bold {
 .timeline .time-item .item-content {
   margin-bottom: 15px;
   margin-left: 15px;
+}
+
+.footer-content {
+  background-image: url("../img/nice.jpeg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: white;
 }
 
 .timeline .time-item:after {

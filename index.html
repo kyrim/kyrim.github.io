@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top is-light-blue" lang="en">
+<html class="has-navbar-fixed-top background-of-site" lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -8,14 +8,14 @@
 	<title>Kyrim Steele - Software Engineer</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css?version=1.">
 </head>
 
-<body class="is-light-blue">
-	<nav class="navbar is-fixed-top has-shadow is-black" id="top">
+<body class="background-of-site">
+	<nav class="navbar is-fixed-top is-black" id="top">
 
 		<div class="navbar-brand">
 			<button class="button navbar-burger is-black" aria-label="Open Navigation" data-target="nav-menu">
@@ -66,13 +66,15 @@
 
 					<div class="media-left wow rollIn is-hidden-tablet">
 						<figure class="image is-128x128">
-							<img alt="Kyrim Steele Avatar" data-src="https://avatars.githubusercontent.com/kyrim?size=128">
+              <img alt="Kyrim Steele Avatar" class="blurred" data-src="https://avatars.githubusercontent.com/kyrim?size=128">
+              <img alt="Kyrim Steele Avatar" data-src="https://avatars.githubusercontent.com/kyrim?size=128">
 						</figure>
 					</div>
 
 					<div class="media-left wow rollIn is-hidden-mobile">
 						<figure class="image is-256x256">
-							<img alt="Kyrim Steele Avatar" data-src="https://avatars.githubusercontent.com/kyrim?size=256">
+              <img alt="Kyrim Steele Avatar" class="blurred" data-src="https://avatars.githubusercontent.com/kyrim?size=256">
+              <img alt="Kyrim Steele Avatar" data-src="https://avatars.githubusercontent.com/kyrim?size=256">
 						</figure>
 					</div>
 					<div class="media-content hello-content wow fadeInRight">
@@ -92,7 +94,7 @@
 		</div>
 	</section>
 
-	<div class="section is-light-purple">
+	<div class="section background-info">
 
 		<div class="columns wow fadeInUp">
 
@@ -100,8 +102,8 @@
 				<div class="content">
 					<h1 id="background" class="title anchor">Background</h1>
 					<p>
-						One of my first memories I have as child is tinkering with a computer with Windows 95, finding applications and fun games
-						to play (3D Pinball!)
+						One of my first memories as a child places me with a computer loaded with Windows 95, finding games
+						to play (3D Pinball!) and exploring the different parts of task menu.
 					</p>
 					<p>Ever since then, I've always had an excitement for electronics and the many incredible ways software and hardware have
 						changed, and are changing, the world.
@@ -122,7 +124,7 @@
 			</div>
 
 			<div class="column is-3">
-				<div class="card is-fullwidth">
+				<div class="card is-fullwidth rounded">
 					<header class="card-header">
 						<p class="card-header-title">
 							Languages and Frameworks
@@ -197,7 +199,7 @@
 			</div>
 
 			<div class="column is-3">
-				<div class="card is-fullwidth">
+				<div class="card is-fullwidth rounded">
 					<header class="card-header">
 						<p class="card-header-title">
 							Technologies
@@ -253,12 +255,12 @@
 		</div>
 	</div>
 
-	<div class="section is-light-blue top-border">
+	<div class="section career top-border">
 		<div class="columns wow fadeInUp">
 
 			<div class="column">
 				<h1 id="career-education" class="title anchor">Career / Education</h1>
-				<div class="box timeline-section">
+				<div class="box timeline-section rounded">
 					<div class="content">
 						<div class="timeline">
 
@@ -267,7 +269,7 @@
 									<div>2015 - Current</div>
 									<p>
 										<strong>
-											<a href="https://www.compass.education/" target="_blank" rel="noopener">Compass Education</a> - Senior Software Engineer (Team Lead)</strong>
+											<a href="https://www.compass.education/" target="_blank" rel="noopener">Compass Education</a><span class="job-title"> - Manager - Software Services (Software Engineer)</span></strong>
 									</p>
 									<p></p>
 								</div>
@@ -279,7 +281,7 @@
 									<div>2014 - 2014</div>
 									<p>
 										<strong>
-											<a href="https://www.siemens.com/au/en/home.html" target="_blank" rel="noopener">Siemens</a> - Project Manager</strong>
+											<a href="https://www.siemens.com/au/en/home.html" target="_blank" rel="noopener">Siemens</a><span class="job-title"> - Project Manager</span></strong>
 									</p>
 									<p></p>
 								</div>
@@ -290,7 +292,7 @@
 									<div>2011 - 2015</div>
 									<p>
 										<strong>
-											<a href="http://www.swinburne.edu.au/" target="_blank" rel="noopener">Swinburne University Of Technology</a> - Bachelor of Information Technology</strong>
+											<a href="http://www.swinburne.edu.au/" target="_blank" rel="noopener">Swinburne University Of Technology</a><span class="job-title"> - Bachelor of Information Technology</span></strong>
 									</p>
 									<p>Graduating in 2015, Swinburne University taught me the fundamentals of Business Information Technology and Software
 										Engineering. A course strongly rooted in a hands on approach to relevant information and Industry based learning,
@@ -308,7 +310,7 @@
 
 			<div class="column">
 				<h1 id="current-projects" class="title anchor">Current Projects</h1>
-				<div class="card is-fullwidth">
+				<div class="card is-fullwidth rounded">
 					<header class="card-header">
 						<p class="card-header-title">
 							Get Your Nutrients
@@ -342,13 +344,13 @@
 
 		</div>
 	</div>
-	<footer class="footer top-border wow fadeInUp">
+	<footer class="footer footer-content top-border wow fadeInUp">
 		<div class="container">
 			<div class="content has-text-centered">
 				<p>
-					<strong>Website built by</strong> by Kyrim Steele</p>
+					Website built by Kyrim Steele
 				<p>
-					<strong>Using:</strong>
+				  Using
 					<a href="https://bulma.io" target="_blank" rel="noopener">Bulma CSS</a>,
 					<a href="https://daneden.github.io/animate.css/" target="_blank" rel="noopener">Animate CSS</a> and
 					<a href="http://mynameismatthieu.com/WOW/" target="_blank" rel="noopener">WOW.js</a>.
