@@ -30,8 +30,8 @@
 				<a href="#me" class="navbar-item is-primary">Me</a>
 				<a href="#background" class="navbar-item">Background</a>
 				<a href="#experience" class="navbar-item">Experience</a>
-				<a href="#career-education" class="navbar-item">Career / Education</a>
-				<a href="#current-projects" class="navbar-item">Current Projects</a>
+				<a href="#career-education" class="navbar-item">Career</a>
+				<a href="#current-projects" class="navbar-item">Projects</a>
 			</div>
 
 			<div class="navbar-end">
@@ -60,6 +60,7 @@
 	</nav>
 
 	<section id="me" class="hero is-pattern anchor">
+      <div id="particle-container"></div>
 		<div class="hero-body bottom-inset">
 			<div class="container">
 				<article class="media avatar">
@@ -74,7 +75,7 @@
 					<div class="media-left wow rollIn is-hidden-mobile">
 						<figure class="image is-256x256">
               <img alt="Kyrim Steele Avatar" class="blurred" data-src="https://avatars.githubusercontent.com/kyrim?size=256">
-              <img alt="Kyrim Steele Avatar" data-src="https://avatars.githubusercontent.com/kyrim?size=256">
+              <img alt="Kyrim Steele Avatar" class="top-image" data-src="https://avatars.githubusercontent.com/kyrim?size=256">
 						</figure>
 					</div>
 					<div class="media-content hello-content wow fadeInRight">
@@ -84,14 +85,14 @@
 							</p>
 							<p>
 								My name is Kyrim. I'm a Software Engineer with a passion for full stack web development, applications and pushing the boundaries
-								on new technologies.
+								of new technologies.
 							</p>
 						</div>
 					</div>
-				</article>
+        </article>
 			</div>
 		</div>
-		</div>
+    </div>
 	</section>
 
 	<div class="section background-info">
@@ -103,7 +104,7 @@
 					<h1 id="background" class="title anchor">Background</h1>
 					<p>
 						One of my first memories as a child places me with a computer loaded with Windows 95, finding games
-						to play (3D Pinball!) and exploring the different parts of task menu.
+						to play (3D Pinball!) and exploring the different parts of the task menu.
 					</p>
 					<p>Ever since then, I've always had an excitement for electronics and the many incredible ways software and hardware have
 						changed, and are changing, the world.
@@ -124,7 +125,7 @@
 			</div>
 
 			<div class="column is-3">
-				<div class="card is-fullwidth rounded">
+				<div class="card card-block is-fullwidth rounded">
 					<header class="card-header">
 						<p class="card-header-title">
 							Languages and Frameworks
@@ -132,7 +133,6 @@
 					</header>
 					<div class="card-content">
 						<div class="content">
-
 							<p>Front-end</p>
 							<ul>
 								<li>
@@ -152,7 +152,7 @@
 								</li>
 							</ul>
 
-							<p>Back-end</p>
+							<p class="margin-top">Back-end</p>
 							<ul>
 								<li>
 									<a href="https://docs.microsoft.com/en-us/dotnet/articles/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework"
@@ -179,7 +179,7 @@
 									<a href="http://php.net/manual/en/intro-whatis.php" target="_blank" rel="noopener">PHP</a>
 								</li>
 							</ul>
-							<p>Full Stack</p>
+							<p class="margin-top">Full Stack</p>
 							<ul>
 								<li>
 									<a href="https://www.javascript.com/" target="_blank" rel="noopener">Javascript</a>
@@ -199,7 +199,7 @@
 			</div>
 
 			<div class="column is-3">
-				<div class="card is-fullwidth rounded">
+				<div class="card card-block is-fullwidth rounded">
 					<header class="card-header">
 						<p class="card-header-title">
 							Technologies
@@ -208,7 +208,7 @@
 					<div class="card-content">
 						<div class="content">
 
-							<p>Databases</p>
+							<pclass="margin-top">Databases</p>
 							<ul>
 								<li>
 									<a href="https://www.mongodb.com/" target="_blank" rel="noopener">MongoDB</a>
@@ -224,7 +224,7 @@
 								</li>
 							</ul>
 
-							<p>Caches</p>
+							<p class="margin-top">Caches</p>
 							<ul>
 								<li>
 									<a href="https://www.couchbase.com/" target="_blank" rel="noopener">Couchbase</a>
@@ -234,7 +234,7 @@
 								</li>
 							</ul>
 
-							<p>Source Control</p>
+							<p class="margin-top">Source Control</p>
 							<ul>
 								<li>
 									<a href="https://subversion.apache.org/" target="_blank" rel="noopener">SVN</a>
@@ -256,20 +256,20 @@
 	</div>
 
 	<div class="section career top-border">
-		<div class="columns wow fadeInUp">
+		<div class="columns">
 
 			<div class="column">
-				<h1 id="career-education" class="title anchor">Career / Education</h1>
+				<h1 id="career-education" class="title anchor">Career</h1>
 				<div class="box timeline-section rounded">
 					<div class="content">
 						<div class="timeline">
 
 							<div class="time-item">
 								<div class="item-content">
-									<div>2015 - Current</div>
+									<div class="time-period">2015 - Current</div>
 									<p>
-										<strong>
-											<a href="https://www.compass.education/" target="_blank" rel="noopener">Compass Education</a><span class="job-title"> - Manager - Software Services (Software Engineer)</span></strong>
+
+											<a class="career-place" href="https://www.compass.education/" target="_blank" rel="noopener">Compass Education: </a><span class="job-title">Manager - Software Services (Software Engineer)</span>
 									</p>
 									<p></p>
 								</div>
@@ -278,10 +278,10 @@
 
 							<div class="time-item">
 								<div class="item-content">
-									<div>2014 - 2014</div>
+									<div class="time-period">2014 - 2014</div>
 									<p>
-										<strong>
-											<a href="https://www.siemens.com/au/en/home.html" target="_blank" rel="noopener">Siemens</a><span class="job-title"> - Project Manager</span></strong>
+
+											<a class="career-place" href="https://www.siemens.com/au/en/home.html" target="_blank" rel="noopener">Siemens: </a><span class="job-title">Project Manager</span>
 									</p>
 									<p></p>
 								</div>
@@ -289,17 +289,10 @@
 
 							<div class="time-item">
 								<div class="item-content">
-									<div>2011 - 2015</div>
+									<div class="time-period">2011 - 2015</div>
 									<p>
-										<strong>
-											<a href="http://www.swinburne.edu.au/" target="_blank" rel="noopener">Swinburne University Of Technology</a><span class="job-title"> - Bachelor of Information Technology</span></strong>
+											<a class="career-place" href="http://www.swinburne.edu.au/" target="_blank" rel="noopener">Swinburne University Of Technology: </a><span class="job-title">Bachelor of Information Technology</span>
 									</p>
-									<p>Graduating in 2015, Swinburne University taught me the fundamentals of Business Information Technology and Software
-										Engineering. A course strongly rooted in a hands on approach to relevant information and Industry based learning,
-										I quickly became familiar with being effective in the work place and knowing what kind of career path I'd like
-										to take.
-									</p>
-									<p></p>
 								</div>
 							</div>
 
@@ -309,7 +302,7 @@
 			</div>
 
 			<div class="column">
-				<h1 id="current-projects" class="title anchor">Current Projects</h1>
+				<h1 id="current-projects" class="title anchor">Projects</h1>
 				<div class="card is-fullwidth rounded">
 					<header class="card-header">
 						<p class="card-header-title">
@@ -347,10 +340,7 @@
 	<footer class="footer footer-content top-border wow fadeInUp">
 		<div class="container">
 			<div class="content has-text-centered">
-				<p>
-					Website built by Kyrim Steele
-				<p>
-				  Using
+				  Website built using
 					<a href="https://bulma.io" target="_blank" rel="noopener">Bulma CSS</a>,
 					<a href="https://daneden.github.io/animate.css/" target="_blank" rel="noopener">Animate CSS</a> and
 					<a href="http://mynameismatthieu.com/WOW/" target="_blank" rel="noopener">WOW.js</a>.
@@ -397,7 +387,125 @@
 				img.removeAttribute('data-src');
 			};
 		});
-	</script>
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script>
+  particlesJS('particle-container',{
+  canvas: {
+    h: "200px"
+  },
+  "particles": {
+    "number": {
+      "value": 1000,
+      "density": {
+        "enable": true,
+        "value_area": 2000
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 4,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 600
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 250,
+        "size": 0,
+        "duration": 2,
+        "opacity": 0,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 	<script>
